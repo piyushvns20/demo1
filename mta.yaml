@@ -18,6 +18,9 @@ modules:
       buildpack: nodejs_buildpack
       readiness-health-check-type: http
       readiness-health-check-http-endpoint: /health
+      disk-quota: 256M
+      keep-existing-routes: true
+      memory: 256M
     build-parameters:
       builder: npm
     provides:
@@ -32,6 +35,9 @@ modules:
     path: gen/db
     parameters:
       buildpack: nodejs_buildpack
+      disk-quota: 256M
+      keep-existing-routes: true
+      memory: 256M
     requires:
       - name: demo1-db
 
