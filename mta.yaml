@@ -40,7 +40,7 @@ modules:
       memory: 256M
     requires:
       - name: demo1-db
-      
+
 
 resources:
   - name: demo1-db
@@ -50,3 +50,4 @@ resources:
       service-plan: hdi-shared
       config:
         database_id: 1c49c9c4-883d-42a8-b7cb-d2567079279b
+        
